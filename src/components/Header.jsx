@@ -7,7 +7,6 @@ import Nav from "./Nav/Nav";
 function Header({ setIsSidebarOpen }) {
   const handleToggleSideBar = () => {
     setIsSidebarOpen((prev) => {
-      console.log("Sidebar durumu:", !prev);
       return !prev;
     });
   };

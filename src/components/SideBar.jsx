@@ -1,9 +1,13 @@
 import React from "react";
 import "./sideBar.css";
 
+import NAVLIST from "../data/navItems";
+import NavItem from "./NavItem";
+
 function SideBar({ isSidebarOpen }) {
   return (
     <aside id="sidebar" className={`sidebar ${isSidebarOpen ? "open" : ""}`}>
+      {/* Change nav-items */}
       <ul className="sidebar-nav" id="sidebar-nav">
         <li className="nav-item">
           <a href="/" className="nav-link">
@@ -172,6 +176,10 @@ function SideBar({ isSidebarOpen }) {
             </li>
           </ul>
         </li>
+        <li className="nav-heading">Pages</li>
+        {NAVLIST.map((nav) => (
+          <NavItem key={nav._id} nav={nav} />
+        ))}
       </ul>
     </aside>
   );
