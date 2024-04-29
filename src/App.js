@@ -10,11 +10,14 @@ import "./App.css";
 import Header from "./components/Header";
 import SideBar from "./components/SideBar";
 
+import { useState } from "react";
+
 function App() {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   return (
     <>
-      <Header />
-      <SideBar />
+      <Header setIsSidebarOpen={setIsSidebarOpen} />
+      <SideBar isSidebarOpen={isSidebarOpen} />
     </>
   );
 }

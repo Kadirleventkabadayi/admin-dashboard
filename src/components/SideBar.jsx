@@ -1,9 +1,9 @@
 import React from "react";
 import "./sideBar.css";
 
-function SideBar() {
+function SideBar({ isSidebarOpen }) {
   return (
-    <aside id="sidebar" className="sidebar">
+    <aside id="sidebar" className={`sidebar ${isSidebarOpen ? "open" : ""}`}>
       <ul className="sidebar-nav" id="sidebar-nav">
         <li className="nav-item">
           <a href="/" className="nav-link">
