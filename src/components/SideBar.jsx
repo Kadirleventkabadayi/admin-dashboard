@@ -1,4 +1,3 @@
-import React from "react";
 import "./sideBar.css";
 
 import NAVLIST from "../data/navItems";
@@ -7,178 +6,80 @@ import NavItem from "./NavItem";
 function SideBar({ isSidebarOpen }) {
   return (
     <aside id="sidebar" className={`sidebar ${isSidebarOpen ? "open" : ""}`}>
-      {/* Change nav-items */}
       <ul className="sidebar-nav" id="sidebar-nav">
-        <li className="nav-item">
-          <a href="/" className="nav-link">
-            <i className="bi bi-gird"></i> <span>Dashboard</span>
-          </a>
-        </li>
+        {/* Dashboard */}
+        <NavItem link="/" icon="bi bi-grid" text="Dashboard" />
 
-        <li className="nav-item">
-          <a
-            className="nav-link collapsed"
-            data-bs-target="#components-nav"
-            data-bs-toggle="collapse"
-            href="#"
-          >
-            <i className="bi bi-menu-button-wide"></i> <span>Documents</span>
-            <i className="bi bi-chevron-down ms-auto"></i>
-          </a>
-          <ul
-            id="components-nav"
-            className="nav-content collapse"
-            data-bs-parent="#sidebar-nav"
-          >
-            <li>
-              <a href="#">
-                <i className="bi bi-circle"></i> <span>Customers</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i className="bi bi-circle"></i> <span>Suppliers</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i className="bi bi-circle"></i> <span>Logistic</span>
-              </a>
-            </li>
-          </ul>
-        </li>
+        {/* Documents */}
+        <NavItem
+          link="#components-nav"
+          icon="bi bi-menu-button-wide"
+          text="Documents"
+          isCollapsed={true}
+        >
+          <NavItem link="#" text="Customers" />
+          <NavItem link="#" text="Suppliers" />
+          <NavItem link="#" text="Logistic" />
+        </NavItem>
 
-        <li className="nav-item">
-          <a
-            className="nav-link collapsed"
-            data-bs-target="#forms-nav"
-            data-bs-toggle="collapse"
-            href="#"
-          >
-            <i className="bi bi-journal-text"></i> <span>Forms</span>
-            <i className="bi bi-chevron-down ms-auto"></i>
-          </a>
-          <ul
-            id="forms-nav"
-            className="nav-content collapse"
-            data-bs-parent="#sidebar-nav"
-          >
-            <li>
-              <a href="#">
-                <i className="bi bi-circle"></i> <span>Application Form</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i className="bi bi-circle"></i> <span>Release Form</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i className="bi bi-circle"></i> <span>Cancellation Form</span>
-              </a>
-            </li>
-          </ul>
-        </li>
+        {/* Forms */}
+        <NavItem
+          link="#forms-nav"
+          icon="bi bi-journal-text"
+          text="Forms"
+          isCollapsed={true}
+        >
+          <NavItem link="#" text="Application Form" />
+          <NavItem link="#" text="Release Form" />
+          <NavItem link="#" text="Cancellation Form" />
+        </NavItem>
 
-        <li className="nav-item">
-          <a
-            className="nav-link collapsed"
-            data-bs-target="#tables-nav"
-            data-bs-toggle="collapse"
-            href="#"
-          >
-            <i className="bi bi-layout-text-window-reverse"></i>{" "}
-            <span>Tables</span>
-            <i className="bi bi-chevron-down ms-auto"></i>
-          </a>
-          <ul
-            I
-            id="tables-nav"
-            className="nav-content collapse"
-            data-bs-parent="#sidebar-nav"
-          >
-            <li>
-              <a href="#">
-                <i className="bi bi-circle"></i> <span>General Tables</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i className="bi bi-circle"></i>
-                <span>Data Tables</span>
-              </a>
-            </li>
-          </ul>
-        </li>
+        {/* Tables */}
+        <NavItem
+          link="#tables-nav"
+          icon="bi bi-layout-text-window-reverse"
+          text="Tables"
+          isCollapsed={true}
+        >
+          <NavItem link="#" text="General Tables" />
+          <NavItem link="#" text="Data Tables" />
+        </NavItem>
 
-        <li className="nav-item">
-          <a
-            className="nav-link collapsed"
-            data-bs-target="#charts-nav"
-            data-bs-toggle="collapse"
-            href="#"
-          >
-            <i className="bi bi-bar-chart"></i> <span>Charts</span>
-            <i className="bi bi-chevron-down ms-auto"></i>
-          </a>
-          <ul
-            id="charts-nav"
-            className="nav-content collapse"
-            data-bs-parent="#sidebar-nav"
-          >
-            <li>
-              <a href="#">
-                <i className="bi bi-circle"></i> <span>Line Chart</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i className="bi bi-circle"></i> <span>Bar Chart</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i className="bi bi-circle"></i> <span>Pie Chart</span>
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li className="nav-item">
-          <a
-            className="nav-link collapsed"
-            data-bs-target="#icons-nav"
-            data-bs-toggle="collapse"
-            href="#"
-          >
-            <i className="bi bi-gem"></i> <span>Icons</span>
-            <i className="bi bi-chevron-down ms-auto"></i>
-          </a>
-          <ul
-            id="icons-nav"
-            className="nav-content collapse"
-            data-bs-parent="#sidebar-nav"
-          >
-            <li>
-              <a href="#">
-                <i className="bi bi-circle"></i> <span>Bootstrap Icons</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i className="bi bi-circle"></i> <span>Remix Icons</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i className="bi bi-circle"></i> <span>Boxicons</span>
-              </a>
-            </li>
-          </ul>
-        </li>
+        {/* Charts */}
+        <NavItem
+          link="#charts-nav"
+          icon="bi bi-bar-chart"
+          text="Charts"
+          isCollapsed={true}
+        >
+          <NavItem link="#" text="Line Chart" />
+          <NavItem link="#" text="Bar Chart" />
+          <NavItem link="#" text="Pie Chart" />
+        </NavItem>
+
+        {/* Icons */}
+        <NavItem
+          link="#icons-nav"
+          icon="bi bi-gem"
+          text="Icons"
+          isCollapsed={true}
+        >
+          <NavItem link="#" text="Bootstrap Icons" />
+          <NavItem link="#" text="Remix Icons" />
+          <NavItem link="#" text="Boxicons" />
+        </NavItem>
+
+        {/* Pages */}
         <li className="nav-heading">Pages</li>
         {NAVLIST.map((nav) => (
-          <NavItem key={nav._id} nav={nav} />
+          <NavItem
+            key={nav._id}
+            link="#"
+            icon={nav.icon}
+            text={nav.name}
+            isCollapsed={true}
+            isPage={true}
+          />
         ))}
       </ul>
     </aside>
