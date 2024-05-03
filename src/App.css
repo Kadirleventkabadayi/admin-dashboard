@@ -121,3 +121,9 @@ h6 {
     opacity: 0;
   }
 }
+
+.card {
+  margin-block: 10px;
+  border: none;
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+}

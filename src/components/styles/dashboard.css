@@ -1,0 +1,27 @@
+.dashboard .filter {
+  position: absolute;
+  right: 0;
+  top: 12px;
+}
+.dashboard .dropdown-menu {
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+}
+.dashboard .filter .icon {
+  padding-inline: 10px;
+  color: #6c757d;
+  padding-bottom: 5px;
+}
+.dashboard .filter .dropdown-header {
+  padding: 8px 15px;
+}
+.dashboard .filter .dropdown-header h6 {
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #012970;
+  margin-bottom: 0;
+  padding: 0;
+}
+.dashboard .filter .dropdown-item {
+  padding: 8px 15px;
+}

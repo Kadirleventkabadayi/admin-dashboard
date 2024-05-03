@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./styles/dashboard.css";
 import fetchData from "../utils/FetchData";
 import Card from "./Card";
+import Reports from "./Reports";
 
 function Dashboard() {
   const [cards, setCards] = useState();
@@ -16,7 +17,12 @@ function Dashboard() {
           <div className="row">
             {cards &&
               cards.length > 0 &&
-              cards.map((card) => <Card key={card._id} card={card}></Card>)}
+              cards.map((card) => (
+                <Card name={card.name} key={card._id} card={card}></Card>
+              ))}
+            <div className="col-12">
+              <Reports />
+            </div>
           </div>
         </div>
         <div className="col-lg-4"></div>

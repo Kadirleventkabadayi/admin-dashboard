@@ -1,5 +1,4 @@
 import React from "react";
-import "./styles/cardFilter.css";
 
 function CardFilter({ filterChange }) {
   return (
