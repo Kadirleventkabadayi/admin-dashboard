@@ -7,9 +7,6 @@ function Card({ card, name }) {
   const handleFilterChange = (filter) => {
     setFilter(filter);
   };
-  console.log(card);
-  console.log("name", card.name);
-  console.log("amount", card.amount);
 
   return (
     <div className="col-xxl-4 col-md-6">

@@ -2,19 +2,20 @@ import React, { useState } from "react";
 import Chart from "react-apexcharts";
 
 function ReportCharts() {
-  const [data, setData] = useState({
+  //Dummy Data
+  const DUMMYDATA = {
     series: [
       {
         name: "Sales",
-        data: [31, 40, 28, 51, 42, 82, 65],
+        data: [31, 40, 28, 51, 22, 68, 65],
       },
       {
         name: "Revenue",
-        data: [11, 23, 32, 45, 67, 21, 45],
+        data: [11, 23, 32, 45, 17, 55, 45],
       },
       {
         name: "Customers",
-        data: [23, 35, 45, 75, 3, 2, 11],
+        data: [23, 35, 45, 75, 3, 36, 11],
       },
     ],
     options: {
@@ -54,7 +55,8 @@ function ReportCharts() {
         },
       },
     },
-  });
+  };
+  const [data, setData] = useState(DUMMYDATA);
   return (
     <Chart
       options={data.options}
