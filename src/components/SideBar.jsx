@@ -1,4 +1,4 @@
-import "./sideBar.css";
+import "./styles/sideBar.css";
 
 import NAVLIST from "../data/navItems";
 import NavItem from "./NavItem";

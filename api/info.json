@@ -1,0 +1,182 @@
+{
+  "cards": [
+    {
+      "_id": 1,
+      "name": "Sales",
+      "icon": "bi bi-cart",
+      "amount": 145,
+      "percentage": 0.12,
+      "active": true
+    },
+    {
+      "_id": 2,
+      "name": "Revenue",
+      "icon": "bi bi-currency-dollar",
+      "amount": 3246,
+      "percentage": 0.08,
+      "active": false
+    },
+    {
+      "_id": 3,
+      "name": "Customers",
+      "icon": "bi bi-people",
+      "amount": 1244,
+      "percentage": -0.11,
+      "active": false
+    }
+  ],
+
+  "news": [
+    {
+      "_id": 1,
+      "img": "../assets/items/news-1.jpg",
+      "title": "Nihil blanditiis at in nihil autem",
+      "subtitle": "Sit recusandae non aspernatur laboriosam. Quia enim eligendi sed ut",
+      "category": "abc"
+    },
+
+    {
+      "_id": 2,
+      "img": "../assets/items/news-2.jpg",
+      "title": "Quidem autem et impedit",
+      "subtitle": "Illo nemo neque maiores vitae officiis cum eum turos elan dries wer ",
+      "category": "abc"
+    },
+    {
+      "_id": 3,
+      "img": "../assets/items/news-3.jpg",
+      "title": "Id quia et et ut maxime similique occaecati ut",
+      "subtitle": "Fugiat voluptas vero eaque accusantium eos. Consequuntur sed ipsam",
+      "category": "abc"
+    },
+    {
+      "_id": 4,
+      "img": "../assets/items/news-4.jpg",
+      "title": "Lbroum autem et impedit quo dart",
+      "subtitle": "Illo nemo neque maiores vitae officiis cum eum turos elan dries wer ",
+      "category": "abc"
+    },
+    {
+      "_id": 5,
+      "img": "../assets/items/news-5.jpg",
+      "title": "et dolares quia et et ut maxime similique occaecati ut",
+      "subtitle": "Fugiat voluptas vero eaque accusantium eos. Consequuntur sed ipsam",
+      "category": "abc"
+    }
+  ],
+  "topselling": [
+    {
+      "_id": 1,
+      "img": "../assets/items/product-1.jpg",
+      "name": "Le oluptate modi accusamus blanditiis",
+      "price": 64,
+      "sold": 124
+    },
+    {
+      "_id": 2,
+      "img": "../assets/items/product-2.jpg",
+      "name": "Modi accusamus blanditiis harum minima.",
+      "price": 64,
+      "sold": 124
+    },
+    {
+      "_id": 3,
+      "img": "../assets/items/product-3.jpg",
+      "name": "Animi nesciunt arum minima.",
+      "price": 46,
+      "sold": 98
+    },
+    {
+      "_id": 4,
+      "img": "../assets/items/product-4.jpg",
+      "name": "Deserunt cupiditate  blanditiis harum minima.",
+      "price": 59,
+      "sold": 74
+    },
+    {
+      "_id": 5,
+      "img": "../assets/items/product-5.jpg",
+      "name": "Deserunt cupiditate  blanditiis harum minima.",
+      "price": 59,
+      "sold": 24
+    }
+  ],
+  "recentsales": [
+    {
+      "_id": 1,
+      "number": "#2457",
+      "customer": "Kadir Levent",
+      "product": "Deserunt cupiditate",
+      "price": 24,
+      "satatus": "Approved"
+    },
+    {
+      "_id": 2,
+      "number": "#2137",
+      "customer": "Hatice Nur",
+      "product": "blanditiis harum minima.",
+      "price": 64,
+      "satatus": "Pending"
+    },
+    {
+      "_id": 3,
+      "number": "#2057",
+      "customer": "Bedii",
+      "product": "Modi accusamus",
+      "price": 134,
+      "satatus": "Approved"
+    },
+    {
+      "_id": 4,
+      "number": "#2357",
+      "customer": "Nikola Tesla",
+      "product": "Fugiat voluptas vero",
+      "price": 74,
+      "satatus": "Rejected"
+    }
+  ],
+  "recentactivities": [
+    {
+      "_id": 1,
+      "time": "23 min",
+      "color": "text-success",
+      "contnet": "Deserunt cupiditate voluptas vero",
+      "highlight": "expolicado offici"
+    },
+    {
+      "_id": 2,
+      "time": "1 hrs",
+      "color": "text-primary",
+      "contnet": "Cupiditate alanditiis harum minima.",
+      "highlight": ""
+    },
+    {
+      "_id": 3,
+      "time": "#2 days",
+      "color": "text-info",
+      "contnet": "Modi accusamus haruminima",
+      "highlight": "Aas heagt lesax"
+    },
+    {
+      "_id": 4,
+      "time": "3 weeks",
+      "color": "text-warning",
+      "contnet": "Fugiat voluptas vero",
+      "highlight": ""
+    },
+    {
+      "_id": 5,
+      "time": "1 mont",
+      "color": "text-muted",
+      "contnet": "Eccuat ptasa axro",
+      "highlight": ""
+    },
+    {
+      "_id": 6,
+      "time": "47 min",
+      "color": "text-danger",
+      "contnet": "Hagia tuat ptasao",
+      "highlight": ""
+    }
+  ]
+}

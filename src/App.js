@@ -11,6 +11,7 @@ import Header from "./components/Header";
 import SideBar from "./components/SideBar";
 
 import { useState } from "react";
+import Main from "./components/Main";
 
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -18,6 +19,7 @@ function App() {
     <>
       <Header setIsSidebarOpen={setIsSidebarOpen} />
       <SideBar isSidebarOpen={isSidebarOpen} />
+      <Main isSidebarOpen={isSidebarOpen} />
     </>
   );
 }

@@ -1,0 +1,33 @@
+.info-card {
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.info-card .card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.info-card .card-body {
+  padding: 1.5rem;
+}
+
+.info-card .card-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #f8f9fc;
+}
+
+.info-card .card-icon i {
+  font-size: 1.5rem;
+  color: #6c757d;
+}
+
+.sales-card .card-icon {
+  background-color: #f5f6f8;
+}
+
+.sales-card .card-icon i {
+  color: #0d6efd;
+}
