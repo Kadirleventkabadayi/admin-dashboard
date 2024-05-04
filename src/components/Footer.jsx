@@ -11,7 +11,7 @@ function Footer() {
         </strong>
       </div>
       <div className="credits">
-        Designed by <a href="#">Levent</a>
+        Designed by <a href="https://github.com/Kadirleventkabadayi">Levent</a>
       </div>
     </footer>
   );
