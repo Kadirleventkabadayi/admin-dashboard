@@ -1,0 +1,30 @@
+.dashboard .news .post-item {
+  margin-bottom: 15px;
+}
+
+.dashboard .news img {
+  width: 80px;
+  border-radius: 5px;
+  margin-right: 15px;
+  float: left;
+}
+
+.dashboard .news h4 {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.dashboard .news h4 a {
+  color: #012970;
+  transition: color 0.3s;
+}
+
+.dashboard .news h4 a:hover {
+  color: #4154f1;
+}
+
+.dashboard .news p {
+  font-size: 14px;
+  color: #777;
+}

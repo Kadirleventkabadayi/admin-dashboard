@@ -12,6 +12,8 @@ import SideBar from "./components/SideBar";
 
 import { useState } from "react";
 import Main from "./components/Main";
+import Footer from "./components/Footer";
+import GoTop from "./components/GoTop";
 
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -20,6 +22,8 @@ function App() {
       <Header setIsSidebarOpen={setIsSidebarOpen} />
       <SideBar isSidebarOpen={isSidebarOpen} />
       <Main isSidebarOpen={isSidebarOpen} />
+      <Footer />
+      <GoTop />
     </>
   );
 }

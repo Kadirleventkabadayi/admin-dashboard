@@ -15,7 +15,7 @@ function ReportCharts() {
       },
       {
         name: "Customers",
-        data: [23, 35, 45, 75, 3, 36, 11],
+        data: [23, 35, 45, 75, 3, 36, 24],
       },
     ],
     options: {

@@ -140,43 +140,43 @@
       "_id": 1,
       "time": "23 min",
       "color": "text-success",
-      "contnet": "Deserunt cupiditate voluptas vero",
-      "highlight": "expolicado offici"
+      "content": "Deserunt cupiditate voluptas vero",
+      "highlight": "cupiditate voluptas "
     },
     {
       "_id": 2,
       "time": "1 hrs",
       "color": "text-primary",
-      "contnet": "Cupiditate alanditiis harum minima.",
+      "content": "Cupiditate alanditiis harum minima.",
       "highlight": ""
     },
     {
       "_id": 3,
-      "time": "#2 days",
+      "time": "2 days",
       "color": "text-info",
-      "contnet": "Modi accusamus haruminima",
-      "highlight": "Aas heagt lesax"
+      "content": "Modi accusamus haruminima",
+      "highlight": "accusamus"
     },
     {
       "_id": 4,
-      "time": "3 weeks",
+      "time": "2 weeks",
       "color": "text-warning",
-      "contnet": "Fugiat voluptas vero",
+      "content": "Fugiat voluptas vero",
       "highlight": ""
     },
     {
       "_id": 5,
-      "time": "1 mont",
+      "time": "3 weeks",
       "color": "text-muted",
-      "contnet": "Eccuat ptasa axro",
+      "content": "Eccuat ptasa axro",
       "highlight": ""
     },
     {
       "_id": 6,
-      "time": "47 min",
+      "time": "1 month",
       "color": "text-danger",
-      "contnet": "Hagia tuat ptasao",
-      "highlight": ""
+      "content": "Hagia tuat ptasao",
+      "highlight": "tuat ptasao"
     }
   ]
 }

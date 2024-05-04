@@ -29,9 +29,8 @@
   color: #0d6efd;
 }
 
-.card-body h6 {
-  padding-top: 10px;
+.info-card .card-body .card-title {
   font-weight: bold;
-  font-size: 26px;
+  font-size: 24px;
   color: #012970;
 }
