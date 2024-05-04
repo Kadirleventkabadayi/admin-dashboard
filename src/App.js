@@ -1,6 +1,5 @@
 //icons
 import "bootstrap-icons/font/bootstrap-icons.css";
-import "remixicon/fonts/remixicon.css";
 
 //Bootstarp
 import "bootstrap/dist/css/bootstrap.min.css";
