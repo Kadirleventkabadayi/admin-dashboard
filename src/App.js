@@ -13,14 +13,28 @@ import { useState } from "react";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
 import GoTop from "./components/GoTop";
+import ProductsPage from "./components/ProductsPage";
 
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const [show, setShow] = useState(false);
+
+  const handleShow = () => {
+    setShow(true);
+  };
   return (
     <>
       <Header setIsSidebarOpen={setIsSidebarOpen} />
       <SideBar isSidebarOpen={isSidebarOpen} />
-      <Main isSidebarOpen={isSidebarOpen} />
+
+      {/* Router Eklenecek */}
+      {show ? (
+        <ProductsPage isSidebarOpen={isSidebarOpen} />
+      ) : (
+        <Main isSidebarOpen={isSidebarOpen} />
+      )}
+
       <Footer />
       <GoTop />
     </>

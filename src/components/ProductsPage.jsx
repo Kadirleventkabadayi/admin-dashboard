@@ -1,18 +1,14 @@
 import React from "react";
 import "./styles/main.css";
 import PageTitle from "./PageTitle";
-import Dashboard from "./Dashboard";
 import Products from "./Products";
 
-//manin in açılıp kapanamsı ayaralancak
-function Main({ isSidebarOpen }) {
+function ProductsPage({ isSidebarOpen }) {
   return (
     <main id="main" className={`main${isSidebarOpen ? "-sidebar-open" : ""}`}>
-      <PageTitle page={"Dashboard"}></PageTitle>
-      <Dashboard />
+      <PageTitle page={"Products"}></PageTitle>
       <Products />
     </main>
   );
 }
-
-export default Main;
+export default ProductsPage;

@@ -1,0 +1,50 @@
+.new-product-form {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 400px;
+  margin-top: 20%;
+  margin-right: 10%;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0.5rem 50px rgba(0, 0, 0, 1);
+  background-color: #f6f9ff;
+}
+
+.new-product-form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.new-product-form .form-group {
+  margin-bottom: 15px;
+}
+
+.new-product-form label {
+  display: block;
+  font-weight: bold;
+  text-align: justify;
+}
+
+.new-product-form input[type="text"],
+.new-product-form input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border-radius: 3px;
+  border: none;
+}
+
+.new-product-form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.new-product-form button:hover {
+  background-color: #0056b3;
+}

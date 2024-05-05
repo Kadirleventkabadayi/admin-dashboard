@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer id="footer" className="footer">
       <div className="copyright">
-        &copy; Copyright{" "}
+        &copy; Copyright
         <strong>
           <span>Kadir Levent Kabadayi</span>. All Rights Reseved
         </strong>

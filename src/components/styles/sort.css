@@ -1,0 +1,27 @@
+.sort-wraper {
+  width: 12%;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  background-color: transparent;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+}
+.sort-btn {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+}
+
+.sort-btn a {
+  padding-left: 5px;
+  width: 85%;
+  font-size: 18px;
+  justify-content: center;
+  color: #012970;
+}

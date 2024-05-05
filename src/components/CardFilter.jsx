@@ -11,7 +11,7 @@ function CardFilter({ filterChange }) {
           <h6>Filter</h6>
         </li>
         <li>
-          <a className="dropdown-item" _onClick={() => filterChange("Today")}>
+          <a className="dropdown-item" onClick={() => filterChange("Today")}>
             Today
           </a>
         </li>

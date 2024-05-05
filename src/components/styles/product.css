@@ -1,0 +1,40 @@
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product input {
+  margin: 0;
+  padding: 0;
+}
+.product-item {
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  width: 98%;
+  cursor: pointer;
+}
+
+.product-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.product-info h3 {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-size: 18px;
+  width: 20%;
+  justify-content: center;
+  font-weight: 600;
+}
+.danger {
+  color: red;
+}
+
+.selected {
+  background-color: rgba(1, 41, 112, 0.2);
+  box-shadow: 0 0 5px #090f44;
+}

@@ -57,18 +57,6 @@ function SideBar({ isSidebarOpen }) {
           <NavItem link="#" text="Pie Chart" />
         </NavItem>
 
-        {/* Icons */}
-        <NavItem
-          link="#icons-nav"
-          icon="bi bi-gem"
-          text="Icons"
-          isCollapsed={true}
-        >
-          <NavItem link="#" text="Bootstrap Icons" />
-          <NavItem link="#" text="Remix Icons" />
-          <NavItem link="#" text="Boxicons" />
-        </NavItem>
-
         {/* Pages */}
         <li className="nav-heading">Pages</li>
         {NAVLIST.map((nav) => (
