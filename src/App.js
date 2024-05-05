@@ -10,10 +10,10 @@ import Header from "./components/Header";
 import SideBar from "./components/SideBar";
 
 import { useState } from "react";
-import Main from "./components/Main";
+import Main from "./pages/Main";
 import Footer from "./components/Footer";
 import GoTop from "./components/GoTop";
-import ProductsPage from "./components/ProductsPage";
+import ProductsPage from "./pages/ProductsPage";
 
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);

@@ -1,7 +1,7 @@
 import React from "react";
-import "./styles/main.css";
-import PageTitle from "./PageTitle";
-import Products from "./Products";
+import "../components/styles/main.css";
+import PageTitle from "../components/PageTitle";
+import Products from "../components/Products";
 
 function ProductsPage({ isSidebarOpen }) {
   return (

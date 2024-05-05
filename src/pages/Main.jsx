@@ -1,8 +1,8 @@
 import React from "react";
-import "./styles/main.css";
-import PageTitle from "./PageTitle";
-import Dashboard from "./Dashboard";
-import Products from "./Products";
+import "../components/styles/main.css";
+import PageTitle from "../components/PageTitle";
+import Dashboard from "../components/Dashboard";
+import Products from "../components/Products";
 
 //manin in açılıp kapanamsı ayaralancak
 function Main({ isSidebarOpen }) {

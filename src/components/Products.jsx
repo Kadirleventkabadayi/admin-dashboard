@@ -5,6 +5,7 @@ import fetchData from "../utils/FetchData";
 import Product from "./Product";
 import NewProductButton from "./NewProductButton";
 import Sort from "./Sort";
+import Pagination from "./Pagination";
 
 const DUMMY_DATA = [
   { _id: 123, brand: "marka 8", name: "ürün ismi 1", price: 123, stock: 12 },
@@ -20,6 +21,7 @@ const DUMMY_DATA = [
 function Products() {
   const [filter, setFilter] = useState("_id");
   const [filteredProducts, setFilteredProducts] = useState([]);
+  const [allBtn, setAllBtn] = useState(false);
 
   useEffect(() => {
     const filtered = DUMMY_DATA.sort((a, b) => {
@@ -50,17 +52,31 @@ function Products() {
     console.log("filter:", filter, "DATA: ", filtered);
   };
 
+  const handleAll = () => {
+    setAllBtn((prev) => !prev);
+  };
   const productKeys = Object.keys(DUMMY_DATA[0]);
   return (
     <section className="dashboard section products-page">
       <div className="row">
         <div
-          className="d-flex justify-content-end col-lg 1 "
+          className="d-flex justify-content-end col-lg 1 sort-and-select"
           style={{ height: "50px" }}
         >
+          <h3 className="headers select">
+            Select All
+            <input
+              className="form-check-input"
+              type="checkbox"
+              name="flexRadioDefault"
+              style={{ cursor: "pointer" }}
+              checked={allBtn}
+              onClick={handleAll}
+            />
+          </h3>
           <Sort status={filter} filterChange={handleFilterChange} />
         </div>
-        <div className="col-lg-12">
+        <div className="col-lg-12 lg-12-column">
           <div className="headers-wraper">
             <h3 />
             <div className="card product-headers lg-11">
@@ -73,10 +89,11 @@ function Products() {
           </div>
           <ul>
             {filteredProducts.map((item) => (
-              <Product key={item._id} item={item} />
+              <Product isSelected={allBtn} key={item._id} item={item} />
             ))}
           </ul>
           <NewProductButton />
+          <Pagination />
         </div>
       </div>
     </section>

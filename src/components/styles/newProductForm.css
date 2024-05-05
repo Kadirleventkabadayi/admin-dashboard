@@ -1,7 +1,6 @@
 .new-product-form {
   position: absolute;
-  top: 0;
-  right: 0;
+  inset: 0px 0px auto auto;
   width: 400px;
   margin-top: 20%;
   margin-right: 10%;

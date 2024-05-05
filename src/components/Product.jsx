@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./styles/product.css";
 
-function Product({ item }) {
+function Product({ isSelected, item }) {
   const [selected, setSelected] = useState(false);
 
   const toggleSelected = () => {
@@ -17,13 +17,13 @@ function Product({ item }) {
         id={item._id}
         onClick={toggleSelected}
         style={{ cursor: "pointer" }}
-        checked={selected}
+        checked={selected || isSelected}
       />
 
       <div
         onClick={toggleSelected}
         className={`card product-item lg-11 ${item.stock > 0 ? "" : "danger"} ${
-          selected > 0 ? "selected" : ""
+          selected || isSelected ? "selected" : ""
         }`}
       >
         <div className="product-info">
