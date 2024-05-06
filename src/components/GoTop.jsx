@@ -6,7 +6,6 @@ function GoTop() {
   useEffect(() => {
     window.addEventListener("scroll", () => {
       setScroll(window.scrollY);
-      console.log(scroll);
     });
   }, [scroll]);
   const goTop = () => {

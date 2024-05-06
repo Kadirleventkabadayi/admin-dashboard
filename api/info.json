@@ -1,4 +1,90 @@
 {
+  "products": [
+    {
+      "_id": "123",
+      "brand": "Apple",
+      "name": "iPhone 13",
+      "price": "123",
+      "stock": "12"
+    },
+    {
+      "_id": "124",
+      "brand": "Apple",
+      "name": "iPhone 14",
+      "price": "173",
+      "stock": "22"
+    },
+    {
+      "_id": "125",
+      "brand": "Apple",
+      "name": "iPhone 15",
+      "price": "245",
+      "stock": "56"
+    },
+    {
+      "_id": "234",
+      "brand": "Samsung",
+      "name": "Galaxy S21",
+      "price": "112",
+      "stock": "11"
+    },
+    {
+      "_id": "235",
+      "brand": "Samsung",
+      "name": "Galaxy S22",
+      "price": "126",
+      "stock": "121"
+    },
+    {
+      "_id": "236",
+      "brand": "Samsung",
+      "name": "Galaxy S23",
+      "price": "171",
+      "stock": "111"
+    },
+    {
+      "_id": "345",
+      "brand": "Sony",
+      "name": "PlayStation 5",
+      "price": "23",
+      "stock": "0"
+    },
+    {
+      "_id": "456",
+      "brand": "Nike",
+      "name": "Air Max 90",
+      "price": "30",
+      "stock": "2"
+    },
+    {
+      "_id": "567",
+      "brand": "Adidas",
+      "name": "Superstar",
+      "price": "123",
+      "stock": "34"
+    },
+    {
+      "_id": "678",
+      "brand": "LG",
+      "name": "UltraGear 27GN950-B",
+      "price": "111",
+      "stock": "1"
+    },
+    {
+      "_id": "789",
+      "brand": "Canon",
+      "name": "EOS Rebel T7",
+      "price": "223",
+      "stock": "14"
+    },
+    {
+      "_id": "890",
+      "brand": "Dell",
+      "name": "XPS 13",
+      "price": "301",
+      "stock": "0"
+    }
+  ],
   "cards": [
     {
       "_id": 1,
@@ -25,7 +111,6 @@
       "active": false
     }
   ],
-
   "news": [
     {
       "_id": 1,
@@ -34,7 +119,6 @@
       "subtitle": "Sit recusandae non aspernatur laboriosam. Quia enim eligendi sed ut",
       "category": "abc"
     },
-
     {
       "_id": 2,
       "img": "../assets/items/news-2.jpg",

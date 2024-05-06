@@ -7,7 +7,8 @@ function WebTrafficChart() {
       tooltip: { trigger: "item" },
       legend: {
         top: "%5",
-        left: "center",
+        left: "initial",
+        padding: [0, 0, 0, 0],
       },
       series: [
         {

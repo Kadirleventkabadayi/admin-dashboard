@@ -1,48 +1,43 @@
-import React, { useState } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 
-function Pagination() {
-  const [activePage, setActivePage] = useState(1);
+function Pagination({ activePage, productsPerPage, totalProducts, paginate }) {
+  const pageNumbers = [];
 
-  const handlePageChange = (pageNumber) => {
-    setActivePage(pageNumber);
-  };
+  for (let i = 1; i <= Math.ceil(totalProducts / productsPerPage); i++) {
+    pageNumbers.push(i);
+  }
 
   return (
     <nav className="d-flex p-2 justify-content-center" aria-label="...">
       <ul className="pagination">
         <li className={`page-item ${activePage === 1 ? "disabled" : ""}`}>
-          <a
-            className="page-link"
-            href="#"
-            tabIndex="-1"
-            onClick={() => handlePageChange(activePage - 1)}
-          >
+          <Link className="page-link" to="#" onClick={() => paginate(1)}>
             Previous
-          </a>
+          </Link>
         </li>
-        <li className={`page-item ${activePage === 1 ? "active" : ""}`}>
-          <a className="page-link" href="#" onClick={() => handlePageChange(1)}>
-            1
-          </a>
-        </li>
-        <li className={`page-item ${activePage === 2 ? "active" : ""}`}>
-          <a className="page-link" href="#" onClick={() => handlePageChange(2)}>
-            2
-          </a>
-        </li>
-        <li className={`page-item ${activePage === 3 ? "active" : ""}`}>
-          <a className="page-link" href="#" onClick={() => handlePageChange(3)}>
-            3
-          </a>
-        </li>
-        <li className={`page-item ${activePage > 3 ? "active" : ""}`}>
-          <a
+        {pageNumbers.map((number) => (
+          <li
+            key={number}
+            className={`page-item ${number === activePage ? "active" : ""}`}
+          >
+            <Link to="#" className="page-link" onClick={() => paginate(number)}>
+              {number}
+            </Link>
+          </li>
+        ))}
+        <li
+          className={`page-item ${
+            activePage === pageNumbers.length ? "disabled" : ""
+          }`}
+        >
+          <Link
             className="page-link"
-            href="#"
-            onClick={() => handlePageChange(activePage + 1)}
+            to="#"
+            onClick={() => paginate(activePage + 1)}
           >
             Next
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>

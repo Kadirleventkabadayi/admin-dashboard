@@ -15,6 +15,17 @@ import Footer from "./components/Footer";
 import GoTop from "./components/GoTop";
 import ProductsPage from "./pages/ProductsPage";
 
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  BrowserRouter,
+  createBrowserRouter,
+  Routes,
+} from "react-router-dom";
+import Layout from "./pages/Layout";
+
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
@@ -23,21 +34,30 @@ function App() {
   const handleShow = () => {
     setShow(true);
   };
+
+  // const myRouter = createBrowserRouter([
+  //   {
+  //     path: "/",
+  //     element: <RootPage />,
+  //     errorElement: <ErrorPage />,
+  //     children: [],
+  //   },
+  // ]);
   return (
-    <>
+    <BrowserRouter>
       <Header setIsSidebarOpen={setIsSidebarOpen} />
       <SideBar isSidebarOpen={isSidebarOpen} />
-
-      {/* Router Eklenecek */}
-      {show ? (
-        <ProductsPage isSidebarOpen={isSidebarOpen} />
-      ) : (
-        <Main isSidebarOpen={isSidebarOpen} />
-      )}
-
+      <Routes>
+        <Route path="/" element={<Layout />} />
+        <Route index element={<Main />} />
+        <Route
+          path="products"
+          element={<ProductsPage isSidebarOpen={isSidebarOpen} />}
+        />
+      </Routes>
       <Footer />
       <GoTop />
-    </>
+    </BrowserRouter>
   );
 }
 

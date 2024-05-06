@@ -8,7 +8,12 @@ function SideBar({ isSidebarOpen }) {
     <aside id="sidebar" className={`sidebar ${isSidebarOpen ? "open" : ""}`}>
       <ul className="sidebar-nav" id="sidebar-nav">
         {/* Dashboard */}
-        <NavItem link="/" icon="bi bi-grid" text="Dashboard" />
+        <NavItem
+          isCollapsed={false}
+          link="/"
+          icon="bi bi-grid"
+          text="Dashboard"
+        />
 
         {/* Documents */}
         <NavItem
@@ -17,9 +22,10 @@ function SideBar({ isSidebarOpen }) {
           text="Documents"
           isCollapsed={true}
         >
-          <NavItem link="#" text="Customers" />
-          <NavItem link="#" text="Suppliers" />
-          <NavItem link="#" text="Logistic" />
+          <NavItem isCollapsed={false} link="/products" text="Products" />
+          <NavItem isCollapsed={false} link="#" text="Customers" />
+          <NavItem isCollapsed={false} link="#" text="Suppliers" />
+          <NavItem isCollapsed={false} link="#" text="Logistic" />
         </NavItem>
 
         {/* Forms */}
@@ -29,9 +35,9 @@ function SideBar({ isSidebarOpen }) {
           text="Forms"
           isCollapsed={true}
         >
-          <NavItem link="#" text="Application Form" />
-          <NavItem link="#" text="Release Form" />
-          <NavItem link="#" text="Cancellation Form" />
+          <NavItem isCollapsed={false} link="#" text="Application Form" />
+          <NavItem isCollapsed={false} link="#" text="Release Form" />
+          <NavItem isCollapsed={false} link="#" text="Cancellation Form" />
         </NavItem>
 
         {/* Tables */}
@@ -41,8 +47,8 @@ function SideBar({ isSidebarOpen }) {
           text="Tables"
           isCollapsed={true}
         >
-          <NavItem link="#" text="General Tables" />
-          <NavItem link="#" text="Data Tables" />
+          <NavItem isCollapsed={false} link="#" text="General Tables" />
+          <NavItem isCollapsed={false} link="#" text="Data Tables" />
         </NavItem>
 
         {/* Charts */}
@@ -52,9 +58,9 @@ function SideBar({ isSidebarOpen }) {
           text="Charts"
           isCollapsed={true}
         >
-          <NavItem link="#" text="Line Chart" />
-          <NavItem link="#" text="Bar Chart" />
-          <NavItem link="#" text="Pie Chart" />
+          <NavItem isCollapsed={false} link="#" text="Line Chart" />
+          <NavItem isCollapsed={false} link="#" text="Bar Chart" />
+          <NavItem isCollapsed={false} link="#" text="Pie Chart" />
         </NavItem>
 
         {/* Pages */}
@@ -65,8 +71,7 @@ function SideBar({ isSidebarOpen }) {
             link="#"
             icon={nav.icon}
             text={nav.name}
-            isCollapsed={true}
-            isPage={true}
+            isCollapsed={false}
           />
         ))}
       </ul>

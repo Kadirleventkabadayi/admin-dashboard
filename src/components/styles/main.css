@@ -1,6 +1,8 @@
 #main {
   margin-top: 60px;
-  padding: 20px 30px;
+  padding-block: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
   transition: all 0.3s;
 }
 

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
-function NavItem({ link, icon, text, children, isCollapsed, isPage }) {
+function NavItem({ link, icon, text, children, isCollapsed }) {
   const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
 
   const handleSubMenuToggle = () => {
@@ -8,15 +9,15 @@ function NavItem({ link, icon, text, children, isCollapsed, isPage }) {
   };
 
   return (
-    <li className="nav-item">
-      <a
+    <li className={`nav-item ${text === "Dashboard" ? "main-item" : ""}`}>
+      <Link
         className={`nav-link ${isCollapsed ? "collapsed" : ""}`}
-        href={link}
+        to={link}
         onClick={isCollapsed ? handleSubMenuToggle : undefined}
       >
         <i className={icon}></i> <span>{text}</span>
-        {!isPage && <i className="bi bi-chevron-down ms-auto"></i>}
-      </a>
+        {isCollapsed && <i className="bi bi-chevron-down ms-auto"></i>}
+      </Link>
       {isCollapsed && (
         <ul
           className="nav-content collapse"

@@ -35,6 +35,5 @@
 }
 
 .selected {
-  background-color: rgba(1, 41, 112, 0.2);
-  box-shadow: 0 0 5px #090f44;
+  border: 1px solid rgba(1, 41, 112, 0.8);
 }

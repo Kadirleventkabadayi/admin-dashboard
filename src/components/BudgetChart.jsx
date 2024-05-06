@@ -6,6 +6,7 @@ function BudgetChart() {
     echarts.init(document.querySelector("#budgetChart")).setOption({
       legend: {
         data: ["Allocated Budget", "Actual Spending"],
+        padding: [0, 0, 0, 0],
       },
       radar: {
         shape: "circle",
@@ -15,7 +16,7 @@ function BudgetChart() {
           { name: "Information Tec.", max: 27000 },
           { name: "Support", max: 42000 },
 
-          { name: "Development", max: 48000 },
+          { name: "Dev.", max: 48000 },
           { name: "Marketing", max: 22500 },
         ],
       },

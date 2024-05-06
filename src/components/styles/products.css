@@ -1,5 +1,6 @@
 .products-page {
   margin-bottom: 5%;
+  padding-inline: 3%;
 }
 .headers-wraper {
   display: flex;
@@ -12,7 +13,7 @@
   padding: 15px;
   margin-bottom: 15px;
   width: 98%;
-  background-color: rgba(19, 40, 77, 0.2);
+  background-color: rgba(19, 40, 77, 0.7);
   box-shadow: none;
   margin-top: 2%;
 }
@@ -29,9 +30,9 @@
   font-size: 22px;
   width: 20%;
   justify-content: center;
-  text-decoration: underline;
+
   font-weight: 700;
-  color: #012970;
+  color: white;
 }
 
 .sort-and-select {
@@ -40,7 +41,7 @@
 .select {
   flex-direction: column;
   align-items: center;
-  text-decoration: underline;
+
   color: #012970;
   font-weight: 700;
 }
