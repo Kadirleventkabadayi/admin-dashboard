@@ -23,10 +23,10 @@ function Products() {
     setFilter(filter);
 
     const filtered = filteredProducts.sort((a, b) => {
-      if (a[filter] < b[filter]) {
+      if (+a[filter] < +b[filter]) {
         return -1;
       }
-      if (a[filter] > b[filter]) {
+      if (+a[filter] > +b[filter]) {
         return 1;
       }
       return 0;

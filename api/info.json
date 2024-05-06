@@ -83,6 +83,22 @@
       "name": "XPS 13",
       "price": "301",
       "stock": "0"
+    },
+    {
+      "id": "a131",
+      "name": "Sample Name",
+      "brand": "Sample Brand",
+      "price": "231",
+      "stock": "2",
+      "_id": "73"
+    },
+    {
+      "id": "19b7",
+      "name": "Sample Name",
+      "brand": "Sample Brand",
+      "price": "123",
+      "stock": "2",
+      "_id": "686"
     }
   ],
   "cards": [
