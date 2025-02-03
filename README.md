@@ -1,4 +1,51 @@
-# Getting Started with Create React App
+# Admin Dashboard
+
+Bu proje, admin paneli için responsive bir tasarım ve dinamik verilerle çalışan bir kullanıcı arayüzü (UI) sunmaktadır. React kullanılarak geliştirilmiş olup, kullanıcı dostu ve modern bir tasarıma sahiptir. Bootstrap ve ECharts gibi popüler kütüphaneler kullanılarak tasarım ve veri görselleştirmeleri yapılmıştır.
+
+## İçindekiler
+
+- [Kullanılan Teknolojiler](#kullanılan-teknolojiler)
+- [Özellikler](#özellikler)
+- [Kurulum](#kurulum)
+- [Kullanım](#kullanım)
+
+## Kullanılan Teknolojiler
+
+- **React**: Kullanıcı arayüzünü oluşturmak için.
+- **Bootstrap**: Responsive tasarım için.
+- **Bootstrap Icons**: İkon seti.
+- **ECharts**: Dinamik veri görselleştirmeleri için.
+- **React ApexCharts**: Grafikler ve görselleştirmeler için.
+- **CSS**: Stil ve tasarım için.
+
+## Özellikler
+
+- **Responsive Tasarım**: Mobil cihazlar dahil her boyutta ekran için uyumlu tasarım.
+- **Dinamik Veri Görselleştirmeleri**: ECharts ve ApexCharts ile gerçek zamanlı grafikler.
+- **Kapsamlı Dashboard**: Kullanıcılar için kontrol paneli, grafikler, tablolara hızlı erişim.
+- **Bootstrap ile Şık Tasarım**: Bootstrap kullanılarak kullanıcı dostu ve modern bir arayüz.
+- **Kolay Entegrasyon**: Backend ile kolayca veri entegrasyonu yapılabilir.
+
+
+## Kurulum
+
+### Ön Koşullar
+
+- Node.js (en son sürüm)
+- npm veya yarn (bağımlılık yönetimi için)
+
+### Adımlar
+
+1. Depoyu klonlayın:
+   ```bash
+   git clone https://github.com/yourusername/admin-dashboard.git
+   cd admin-dashboard
+2. Bağımlılıkları yükleyin:
+npm install
+# veya
+yarn install
+
+## Kullanım
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
